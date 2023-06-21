@@ -133,16 +133,16 @@ class Image : public ::Image {
     /**
      * Generate image: vertical gradient
      */
-    static ::Image GradientV(int width, int height, ::Color top, ::Color bottom) {
-        return ::GenImageGradientV(width, height, top, bottom);
+    static ::Image GradientLinear(int width, int height, int direction, ::Color top, ::Color bottom) {
+        return ::GenImageGradientLinear(width, height, direction, top, bottom);
     }
 
     /**
      * Generate image: horizontal gradient
      */
-    static ::Image GradientH(int width, int height, ::Color left, ::Color right) {
-        return ::GenImageGradientH(width, height, left, right);
-    }
+    //static ::Image GradientH(int width, int height, ::Color left, ::Color right) {
+     //   return ::GenImageGradientH(width, height, left, right);
+    //}
 
     /**
      * Generate image: radial gradient
